@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Definitions for clipping and gradients -->
+  <defs>
+    <!-- Clip-path to restrict the tilled fields to a perfect circle -->
+    <clipPath id="circle-clip">
+      <circle cx="256" cy="275" r="190" />
+    </clipPath>
+  </defs>
+
+  <!-- 1. Outer Swirling Circular Border in Forest Green -->
+  <path d="M 205 145 C 130 185, 55 285, 68 375 C 80 455, 185 490, 275 480 C 375 468, 435 390, 435 295 C 435 272, 422 250, 422 250" 
+        fill="none" 
+        stroke="#1c542d" 
+        stroke-width="26" 
+        stroke-linecap="round" 
+        id="outer-ring" />
+
+  <!-- 2. Sprouting Leaves (Forest Green) -->
+  <g id="sprouting-leaves">
+    <!-- Left Leaf (Slightly smaller, angled left/upward) -->
+    <path d="M 246 295 
+             C 215 280, 195 210, 222 145 
+             C 255 125, 280 185, 280 235 
+             C 280 255, 272 275, 252 292 Z" 
+          fill="#1c542d" 
+          stroke="#1c542d" 
+          stroke-width="4" 
+          stroke-linejoin="round" />
+    
+    <!-- Right Leaf (Larger, prominent, angled right/upward) -->
+    <path d="M 246 295 
+             C 260 255, 305 140, 395 125 
+             C 410 170, 370 270, 305 295 
+             C 285 303, 265 305, 246 295 Z" 
+          fill="#1c542d" 
+          stroke="#1c542d" 
+          stroke-width="4" 
+          stroke-linejoin="round" />
+  </g>
+
+  <!-- 3. Tilled Soil Arch Fields (Clipped inside the lower circle bounds) -->
+  <g clip-path="url(#circle-clip)" id="soil-field-system">
+    <!-- Heavy base underfill -->
+    <circle cx="256" cy="275" r="190" fill="#1c542d" />
+    
+    <!-- Stripe 1 (Top-Left Lime Stripe) -->
+    <path d="M 40 220 Q 150 250, 230 450 L 30 450 Z" fill="#9dbb26" stroke="#1c542d" stroke-width="14" stroke-linecap="round" />
+    
+    <!-- Stripe 2 (Second Lime Stripe) -->
+    <path d="M 75 250 Q 180 290, 290 450 L 50 450 Z" fill="#9dbb26" stroke="#1c542d" stroke-width="14" stroke-linecap="round" />
+    
+    <!-- Stripe 3 (Third Lime Stripe) -->
+    <path d="M 125 285 Q 220 330, 345 450 L 90 450 Z" fill="#9dbb26" stroke="#1c542d" stroke-width="14" stroke-linecap="round" />
+    
+    <!-- Stripe 4 (Fourth Lime Stripe) -->
+    <path d="M 195 315 Q 260 365, 395 450 L 150 450 Z" fill="#9dbb26" stroke="#1c542d" stroke-width="14" stroke-linecap="round" />
+
+    <!-- Stripe 5 (Fifth Lime Stripe / Bottom Right edge helper) -->
+    <path d="M 270 340 Q 310 390, 445 430 L 220 450 Z" fill="#9dbb26" stroke="#1c542d" stroke-width="14" stroke-linecap="round" />
+    
+    <!-- Subtle divider lines overlapping perfectly to create natural tilled grooves -->
+    <path d="M 90 200 C 140 320, 280 430, 350 470" fill="none" stroke="#1c542d" stroke-width="12" />
+    <path d="M 150 220 C 195 310, 315 410, 410 440" fill="none" stroke="#1c542d" stroke-width="12" />
+  </g>
+</svg>
