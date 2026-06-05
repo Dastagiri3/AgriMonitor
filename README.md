@@ -6,7 +6,7 @@ The platform provides real-time agricultural insights through an easy-to-use web
 
 ## 🚀 Live Demo
 
-🔗 Deployment: https://agrii-monitor.vercel.app/
+🔗 Deployment: 
 
 ## 📂 GitHub Repository
 
